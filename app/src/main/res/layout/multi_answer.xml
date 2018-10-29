@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/multi_answer_layout"
+    android:background="@drawable/layoutbackground"
+    android:padding="20dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/quesNum"
+            android:layout_width="28dp"
+            android:layout_height="wrap_content"
+            android:textColor="#060606"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:ems="10"
+            android:text="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#060606"
+            android:textStyle="bold"
+            android:id="@+id/ques"
+            android:text="Where is Effiel Tower located?"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/chkopt1"
+            android:text="Option-1"/>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/chkopt2"
+            android:text="Option-2"/>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/chkopt3"
+            android:text="Option-3"
+            />
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/chkopt4"
+            android:text="Option-4"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nextBtn"
+        android:text="Next"
+        android:onClick="click"
+        android:background="#bc18cce4"
+        android:layout_gravity="center"
+        />
+
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/single_answer_layout"
+    android:padding="20dp"
+    android:background="@drawable/layoutbackground"
+    android:layout_height="match_parent">
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+
+      <TextView
+          android:id="@+id/quesNum"
+          android:layout_width="28dp"
+          android:layout_height="wrap_content"
+          android:ems="10"
+          android:text="1"
+          android:gravity="center"
+          android:textColor="#060606"
+          android:textStyle="bold" />
+
+      <TextView
+          android:id="@id/ques"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Where is Effiel Tower located?"
+          android:textColor="#060606"
+          android:textStyle="bold" />
+
+  </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioGroup">
+
+            <RadioButton
+                android:id="@+id/opt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Option-1" />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/opt2"
+                android:text="Option-2"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/opt3"
+                android:text="Option-3"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/opt4"
+                android:text="Option-4"/>
+        </RadioGroup>
+    </LinearLayout>
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nextBtn"
+        android:text="Next"
+        android:onClick="click"
+        android:background="#bc18cce4"
+        android:layout_gravity="center"
+        />
+
+
+
+</LinearLayout>
